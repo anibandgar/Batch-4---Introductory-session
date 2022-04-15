@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function a()
+            {
+               document.getElementById("demo").innerHTML="Wa have used function";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>First js program</h1>
+        <p id="demo">learning JS</p>
+        <button type="button" onclick="a()">click me</button>
+    </body>
+
+
+
+
+
+    <body>
+        
+            <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">clck if you want to see date and time</button>
+             <p id="demo"></p>
+
+    </body>
+</html>
+
+
+    <body>
+        <img id="myimage" onclick="changeimage()"src="ofbulb.jpg" width="250" height="350">
+        <script>
+            function changeimage(){
+                var image=document.getElementById('myimage');
+                if(image.src.match("ofbulb.jpg")){
+                    image.src="onbulb.jpg";
+                }
+                else{
+                    image.src="ofbulb.jpg";
+                }
+            }
+        </script>
+    </body>
+
+
+
+
+
+
+    
+    <body>
+        <h1>JavaScript</h1>
+        <p>we are adding string with number</p>
+        <p id="demo"></p>
+        <script>
+            //let name= 'I am "Aniket"'
+            //let collage='"Walchand institute of technology"';
+            //let city="Solapur"
+            //const arr=['aniket','yash','utsab']
+            //document.getElementById('demo').innerHTML=name+"<br>"+collage+"<br>"+city
+           // document.getElementById('demo').innerHTML=arr[2]
+           const obj={
+               name:"ani", lname:" bandgar",address:"solapur"
+           }
+           document.getElementById('demo').innerHTML=obj.name+obj.lname+"<br>"+"lives in " + obj.address;
+        </script>
+    </body>
+</html>
+
+
+
+
+
+    <h1>reverse number</h1>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function rev() {
+                let reverse=0;
+                let num=123;
+                let digit=0;
+                while(num!=0){
+                    digit=num%10;
+                    reverse=reverse*10+digit;
+                    num=math.floor(num/10);
+                }
+            }
+            document.getElementById('demo').innerHTML=reverse;
+        </script>
+    </body>
+
+
+
+
+
+
+    <body>
+        <h1>array_Operations</h1>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            const arr=['aniket','yash','utsab','iswarya'];
+            arr.unshift('shaifali')// adds at 1st index
+            arr.push('jit')// adds at last index
+            arr.pop()
+            document.getElementById('demo1').innerHTML=arr.indexOf('yash');
+            document.getElementById('demo2').innerHTML=arr.toString();
+            document.getElementById('demo3').innerHTML=arr.length;
+           
+
+        </script>
+    </body>
+</html>
